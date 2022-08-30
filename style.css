@@ -65,7 +65,7 @@ header {
     border-top: none;
     border-left: none;
     border-right: none;
-    padding: 2% 5%;
+    padding: 5% 0;
     background-color: transparent;
 }
 
@@ -86,7 +86,7 @@ header {
     font-size: 0.8rem;
     color: gray;
     background-color: transparent;
-    padding: 3% 3%;
+    padding: 5% 0;
 }
 
 /* SECTION 3 (!) */
