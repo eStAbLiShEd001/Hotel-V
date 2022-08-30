@@ -66,13 +66,14 @@ header {
     border-left: none;
     border-right: none;
     padding: 2% 5%;
+    background-color: transparent;
 }
 
 .section-two [type = submit] {
     background-color: rgb(23, 90, 52);
     border: 2px solid rgb(23, 90, 52);
     color: rgb(255, 255, 255);
-    padding: 2% 5%;
+    padding: 5% 10%;
     margin-top: 10%;
     width: 100%;
 }
@@ -84,6 +85,8 @@ header {
     border-right: none;
     font-size: 0.8rem;
     color: gray;
+    background-color: transparent;
+    padding: 3% 3%;
 }
 
 /* SECTION 3 (!) */
@@ -108,12 +111,12 @@ header {
     50% {
         transform: scale(1.2);
         opacity: 1.4;
-        background: rgb(185, 185, 185);
+        /* background: rgb(185, 185, 185); */
     }
     100% {
         transform: scale(1.4);
         opacity: 1.4;
-        background: rgb(184, 184, 184);
+        /* background: rgb(184, 184, 184); */
     }
 }
 .section-three::after {
