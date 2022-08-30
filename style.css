@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    padding: 0 3%;
+    background-color: rgb(241, 239, 239);
+}
+label {
+    display: block;
+    padding: 5% 0 0 0;
+}
+select {
+    width: 50%;
+}
+hr {
+    margin: 5% 10%;
+    height: 3vh;
+    background-color: rgb(23, 90, 52);
+}
+header {
+    padding: 5% 0 0 0;
+}
+.section-one p {
+    font-size: 0.8rem;
+    padding: 10% 0 5% 0;
+}
+.section-one h1 {
+    font-size: 2.5rem;
+    line-height: 40px;
+}
+.section-one button {
+    margin: 6% 0 0 0;
+    padding: 2% 6%;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.btn-one {
+    background-color: rgb(23, 90, 52);
+    border: 2px solid rgb(23, 90, 52);
+    color: rgb(255, 255, 255);
+}
+.btn-two {
+    background-color: transparent;
+    border: 2px solid rgb(23, 90, 52);
+    color: rgb(109, 108, 108);
+}
+
+
+/* SECTION TWO BEGINS */
+.section-two {
+    margin-top: 15%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.section-two form {
+    padding: 10% 8%;
+}
+.section-two [type = datetime-local] {
+    border: 2px solid rgb(23, 90, 52);
+    width: 100%;
+    border-radius: 8px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 2% 5%;
+}
+
+.section-two [type = submit] {
+    background-color: rgb(23, 90, 52);
+    border: 2px solid rgb(23, 90, 52);
+    color: rgb(255, 255, 255);
+    padding: 2% 5%;
+    margin-top: 10%;
+    width: 100%;
+}
+
+#list {
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 0.8rem;
+    color: gray;
+}
+
+/* SECTION 3 (!) */
+.section-three {
+    position: relative;
+}
+.section-three h1 {
+    text-align: center;
+    margin: 30% 0;
+    background-color: rgb(23, 90, 52);
+    clip-path: circle();
+    padding: 2%;
+    color: white;
+}
+.section-three::after {
+    animation: pulse 1000ms cubic-bezier(0.9, 0.7, 0.5, 0.9) infinite;
+}
+@keyframes pulse {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1.4;
+        background: rgb(185, 185, 185);
+    }
+    100% {
+        transform: scale(1.4);
+        opacity: 1.4;
+        background: rgb(184, 184, 184);
+    }
+}
+.section-three::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    /* background: rgb(23, 90, 52); */
+    clip-path: circle();
+    z-index: -1;
+    width: 100%;
+}
+
+/* SECTION 4 */
+.section-four {
+    text-align: center;
+}
+.section-four h1 {
+    padding: 5% 0;
+}
+.sub-section-four {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+    margin: 15% 0;
+}
+.sub-section-four div {
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 45% 5%;
+    font-size: 0.6rem;
+    color: rgb(247, 126, 14);
+    font-weight: bold;
+
+}
+.sub-section-four div:first-child {
+    transform: translateY(-20%);
+}
+.sub-section-four div:nth-child(2) {
+    transform: translateY(10%);
+}
+.sub-section-four div:nth-child(4) {
+    transform: translateY(30%);
+}
+.sub-section-four div:last-child {
+    transform: translateY(25%);
+}
+.sub-section-four div:hover {
+    background-color: rgb(23, 90, 52);
+    color: white;
+    transition-property: background-color;
+    transition-duration: 1s;
+    transform: translateY(-2%);
+
+}
+/* SECTION 5 */
+.section-five {
+    text-align: center;
+    padding: 20% 0;
+}
+.section-five p {
+    color: gray;
+
+}
+.section-five h1 {
+    padding: 3% 0 10% 0;
+}
+.btn-section-five {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+}
+.btn-section-five button {
+    color: gray;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+}
+.btn-section-five button:hover {
+    color: rgb(247, 126, 14);
+    border: 2px solid rgba(128, 128, 128, 0.486);
+    transition-duration: 0.5s;
+    padding: 2% 2%;
+    font-weight: bold;
+}
+
+/* SECTION 6 */ 
+.section-six {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0 0 0 / 30%);
+    padding: 20% 10%;
+}
+.section-six p {
+    padding: 5% 0;
+}
+.sub-section-six .CTA {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: rgb(85, 83, 83);
+
+}
+.sub-section-six h1 {
+    font-size: 1.5rem;
+}
+.sub-section-six .sub-text {
+    color: rgb(85, 83, 83);
+
+}
+.sub-section-six button {
+    padding: 4% 10%;
+    font-weight: bold;
+    background-color: rgb(247, 126, 14);
+    border: 1px solid rgb(247, 126, 14);
+    box-shadow: 0 0 10px rgba(0 0 0 / 30%);
+    color: white;
+}
+
+/* SECTION 7 */
+.section-seven {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0 0 0 / 30%);
+    padding: 20% 3% ;
+}
+.section-seven h1 {
+    padding: 5% 0;
+}
+.section-seven button {
+    margin: 6% 0 0 0;
+    padding: 2% 6%;
+    font-weight: bold;
+    transition: 2s;
+    cursor: pointer;
+    background-color: rgb(23, 90, 52);
+    border: 2px solid rgb(23, 90, 52);
+    color: rgb(255, 255, 255);
+}
+
+/* SECTION 8 */ 
+.section-eight {
+    padding: 30% 0;
+    text-align: center;
+}
+.section-eight p {
+    font-size: 0.8rem;
+}
+.section-eight h3 {
+    font-size: 1rem;
+}
+article {
+    font-size: 0.8rem;
+    color: rgb(23, 90, 52);
+    font-weight: bold;
+    padding: 3% 0;
+}
+.section-eight h1 {
+    padding: 5% 0;
+}
+.section-eight img {
+    width: 50%;
+    clip-path: circle();
+}
+.client-feedbacks {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0 0 0 / 30%);
+    padding: 5% 10%;
+
+}
+.client-feedbacks-child {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+.face {
+    --flow-space: 1rem;
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+}
+.back {
+    display: grid;
+    place-items: center;
+    transform: rotateY(180deg);
+
+}
+.face:focus, .face:focus-within, .client-feedbacks-child:hover {
+    transform: rotateY(180deg);
+}
+.reduce-motion .back {
+    z-index: 2;
+    opacity: 0;
+    pointer-events: none;
+    transition-duration: 0.6s;
+    transform: none;
+}
+.reduce-motion .client-feedbacks-child:focus .back, .reduce-motion .client-feedbacks-child:focus-within .back, .reduce-motion .client-feedbacks-child:hover .back {
+    opacity: 1;
+    pointer-events: all;
+    transform: none;
+}
