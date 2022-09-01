@@ -60,7 +60,7 @@ aside {
 .slider {
     width: 800px;
     height: 500px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     overflow: hidden;
 }
 .slides {
@@ -419,3 +419,222 @@ article {
     pointer-events: all;
     transform: none;
 }
+
+/* SECTION 9 */
+.section-nine {
+    text-align: center;
+    background-image: linear-gradient(gray, black);
+    padding: 30% 3%;
+}
+.section-nine h1 {
+    color: white;
+}
+.section-nine p {
+    color: rgb(23, 90, 52);
+    font-weight: bold;
+    padding-bottom: 5%;
+}
+.section-9-btn-one {
+    background-color: rgb(23, 90, 52);
+    border: 2px solid rgb(23, 90, 52);
+    color: rgb(255, 255, 255);
+}
+.section-9-btn-two {
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+}
+.section-nine button {
+    margin: 10% 0 0 0;
+    padding: 5% 8%;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    margin: 10% 2%;
+}
+
+/* SECTION 10 */
+
+.section-ten {
+    /* height: 100vh; */
+    margin-top: 20%;
+    margin-bottom: 20%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0 0 0 / 30%);
+
+}
+
+.slider-two {
+    width: 800px;
+    height: 500px;
+    /* border-radius: 10px; */
+    overflow: hidden;
+
+}
+.slides-two {
+  width: 500%; 
+  height: 500px; 
+  display: flex;
+}
+.slides-two input {
+    display: none;
+}
+.slide2 {
+    width: 20%;
+}
+.slide2 img {
+    width: 100%;
+    height: 300px;
+
+}
+/* CSS FOR MANUAL SLIDE NAVIGATION */
+
+/* .navigation-manual {
+position: absolute;
+width: 800px;
+margin-top: -40px;
+display: flex;
+justify-content: center;
+} */
+.manual-btn-2 {
+    border: 2px solid #40D3DC;
+    /* padding: 5px; */
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.manual-btn-2:not(:last-child) {
+    margin-right: 10px;
+}
+.manual-btn-2:hover {
+    background: red;
+}
+#radio1-2:checked ~ .first2 {
+    margin-left: 0;
+}
+#radio2-2:checked ~ .first2 {
+    margin-left: -20%;
+}#radio3-2:checked ~ .first2 {
+    margin-left: -40%;
+}#radio4-2:checked ~ .first2 {
+    margin-left: -60%;
+}
+
+/* CSS FOR AUTOMATIC NAVIGATION */
+.navigation-auto-two {
+    position: absolute;
+    display: none;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+    
+}
+.navigation-auto-two div {
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.navigation-auto-two div:not(:last-child) {
+    margin-right: 10px;
+}
+#radio1-2:checked ~ .navigation-auto .auto-btn1-2 {
+    background: green;
+}
+#radio2-2:checked ~ .navigation-auto-two .auto-btn2-2 {
+    background: green;
+}#radio3-2:checked ~ .navigation-auto-two .auto-btn3-2 {
+    background: green;
+}#radio4-2:checked ~ .navigation-auto-two .auto-btn4-2 {
+    background: green;
+}
+.slide2 div {
+    display: flex;
+    justify-content: space-around;
+    padding: 3% 5% 3% 5%;
+    font-size: 1.2rem
+}
+.slide2 h4 {
+    padding: 0 5% 3% 5%;
+    font-size: 1.2rem;
+}
+.slide2 p {
+    padding: 0 5%;
+}
+.section-u10 {
+    padding: 15% 0 3% 0;
+}
+footer {
+    padding-bottom: 20%;
+}
+footer div {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0 0 0 / 30%);
+    text-align: center;
+    padding: 20% 3% 10% 3%;
+}
+footer p {
+    padding-top: 10%;
+}
+footer input[type = email] {
+    border: none;
+    background-color: rgb(225, 220, 220);
+    width: 100%;
+    padding: 5% 3%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    letter-spacing: 2px;
+    color: rgb(63, 63, 63);
+}
+
+footer input[type = submit] {
+    text-align: center;
+    width: 100%;
+    background-color: rgb(23, 90, 52);
+    border: 2px solid rgb(23, 90, 52);
+    color: rgb(255, 255, 255);
+    padding: 5% 10%;
+    letter-spacing: 2px;
+
+}
+.footer-section {
+    background-color: rgb(247, 126, 14);
+    padding: 5% 0;
+}
+.footer-section div {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    color: white;
+}
+.fa-facebook-f, .fa-twitter, .fa-linkedin, .fa-youtube {
+    background-color: black;
+    padding: 3% 4%;
+    margin: 0 1%;
+}
+.footer-section p {
+    text-align: center;
+    color: white;
+    padding-top: 5%;
+    font-size: 0.7rem;
+}
+.footer-section a {
+    color: white;
+    font-size: 0.7rem;
+}
+.footer-section a:hover {
+    color: rgb(23, 90, 52);
+    font-size: 1rem;
+    text-decoration: none;
+}
+/* .move-top {
+    float: right;
+    transform: translateX(-10%); 
+    background-color: rgb(23, 90, 52);
+    padding: 2% 3%;
+    position: fixed;
+} */
