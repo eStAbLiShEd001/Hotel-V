@@ -14,7 +14,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body onload="alert('WELCOME!')">
     <!-- 
         <i class="fa-solid fa-calendar-days"></i>
     <i class="fa-solid fa-arrow-down-long"></i>
@@ -37,15 +37,45 @@
     <i class="fa-brands fa-whatsapp"></i>
     <i class="fa-solid fa-bars"></i> -->
     <header>
-      <h4>VILLAMAR</h4>
+      <div class="nav-bars">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <img src="images/logo.png" alt="" />
+      </div>
+      <div class="quick-info">
+        <div class="phone">
+          <p class="number">Phone Number</p>
+          <p>+234-000-000-0000</p>
+        </div>
+        <div class="email">
+          <p class="address">Email Address</p>
+          <p>sample@gmail.com</p>
+        </div>
+      </div>
     </header>
     <main>
       <section class="section-one">
-        <div>
-          <p>THE ULTIMATE LUXURY EXPERIENCE</p>
-          <h1>The Perfect Base For You</h1>
-          <button class="btn-one">Take a Tour</button>
-          <button class="btn-two">Learn More</button>
+        <div class="text">
+          <div class="sub-text">
+            <p>THE ULTIMATE LUXURY EXPERIENCE</p>
+            <h1>The Perfect Base For You</h1>
+            <div class="main-btn">
+              <button class="btn-one">TAKE A TOUR</button>
+              <button class="btn-two">LEARN MORE</button>
+            </div>
+          </div>
+          <div class="main-img">
+            <img
+              src="images/tholaal-mohamed-8sKTHeGgrUM-unsplash (1).jpg"
+              alt=""
+            />
+          </div>
         </div>
         <aside>
           <div class="slider">
@@ -100,28 +130,32 @@
 
       <section class="section-two">
         <form action="">
-          <label for="arrival-date">Arrival Date</label>
-          <input type="datetime-local" name="" id="" />
-
-          <label for="arrival-date">Depature Date</label>
-          <input type="datetime-local" name="" id="" />
-
-          <label for="arrival-date">Guests</label>
-          <select name="guests" id="list">
-            <option value="">Select From Here</option>
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">4</option>
-            <option value="">8</option>
-            <option value="">14</option>
-            <option value="">24</option>
-            <option value="">30</option>
-            <option value="">32</option>
-            <option value="">36</option>
-            <option value="">40</option>
-            <option value="">44</option>
-          </select>
-          <input type="submit" value="CHECK AVALAILABILITY" />
+          <div>
+            <label for="arrival-date">Arrival Date</label>
+            <input type="datetime-local" name="" id="" required/>
+          </div>
+          <div>
+            <label for="arrival-date">Depature Date</label>
+            <input type="datetime-local" name="" id="" required />
+          </div>
+          <div>
+            <label for="arrival-date">Guests</label>
+            <select name="guests" id="list" required>
+              <option value="">Select From Here</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">4</option>
+              <option value="">8</option>
+              <option value="">14</option>
+              <option value="">24</option>
+              <option value="">30</option>
+              <option value="">32</option>
+              <option value="">36</option>
+              <option value="">40</option>
+              <option value="">44</option>
+            </select>
+          </div>
+          <input onclick="alert('Schedule Successfully Recorded')" type="submit" value="CHECK AVALAILABILITY" />
         </form>
       </section>
 
@@ -137,63 +171,88 @@
           Moriond
         </h1>
         <div class="sub-section-four">
-          <div><p>BREAKFAST</p></div>
-          <div><p>AIRPORT PICKUP</p></div>
-          <div><p>CITY GUIDE</p></div>
-          <div><p>BBQ PARTY</p></div>
-          <div><p>LUXURY ROOM</p></div>
+          <div>
+            <i class="fa-solid fa-champagne-glasses"></i>
+            <p>BREAKFAST</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-cart-flatbed-suitcase"></i>
+            <p>AIRPORT PICKUP</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-glasses"></i>
+            <p>CITY GUIDE</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-gifts"></i>
+            <p>BBQ PARTY</p>
+          </div>
+          <div>
+            <i class="fa-solid fa-tree"></i>
+            <p>LUXURY ROOM</p>
+          </div>
         </div>
       </section>
 
       <section class="section-five">
-        <p>ROOM TYPE</p>
-        <h1>Inspired Loding</h1>
-        <div class="btn-section-five">
-          <button>Luxury</button>
-          <button>Family</button>
-          <button>Double Bed</button>
-          <button>Relax</button>
+        <div class="slider-effect">
+          <div>
+            <p>ROOM TYPE</p>
+            <h1>Inspired Loding</h1>
+          </div>
+          <div class="btn-section-five">
+            <button>Luxury</button>
+            <button>Family</button>
+            <button>Double Bed</button>
+            <button>Relax</button>
+          </div>
         </div>
       </section>
 
       <section class="section-six">
-        <div>
-          <img src="" alt="" />
+        <div class="grid-item">
+          <div class="globe">
+          <div>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div>
+            <h1>Easy & Free Transport</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate ducimus similique pariatur natus laudantium explicabo
+              illo! Aperiam magnam labore blanditiis consequuntur mollitia optio
+              cumque, autem sequi eius deserunt vero commodi.
+            </p>
+          </div>
         </div>
-        <div>
-          <h1>Easy & Free Transport</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            ducimus similique pariatur natus laudantium explicabo illo! Aperiam
-            magnam labore blanditiis consequuntur mollitia optio cumque, autem
-            sequi eius deserunt vero commodi.
-          </p>
+        <div class="globe">
+          <div>
+            <i class="fa-solid fa-martini-glass-citrus"></i>
+          </div>
+          <div>
+            <h1>Clean & Fresh Food</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate ducimus similique pariatur natus laudantium explicabo
+              illo! Aperiam magnam labore blanditiis consequuntur mollitia optio
+              cumque, autem sequi eius deserunt vero commodi.
+            </p>
+          </div>
+          </div>
+          <div class="globe">
+          <div>
+            <i class="fa-solid fa-umbrella-beach"></i>
+          </div>
+          <div>
+            <h1>Play Ground & Swimmimg pool</h1>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptate ducimus similique pariatur natus laudantium explicabo
+              illo! Aperiam magnam labore blanditiis consequuntur mollitia optio
+              cumque, autem sequi eius deserunt vero commodi.
+            </p>
+          </div>
         </div>
-
-        <div>
-          <img src="" alt="" />
-        </div>
-        <div>
-          <h1>Clean & Fresh Food</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            ducimus similique pariatur natus laudantium explicabo illo! Aperiam
-            magnam labore blanditiis consequuntur mollitia optio cumque, autem
-            sequi eius deserunt vero commodi.
-          </p>
-        </div>
-
-        <div>
-          <img src="" alt="" />
-        </div>
-        <div>
-          <h1>Play Ground & Swimmimg pool</h1>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            ducimus similique pariatur natus laudantium explicabo illo! Aperiam
-            magnam labore blanditiis consequuntur mollitia optio cumque, autem
-            sequi eius deserunt vero commodi.
-          </p>
         </div>
 
         <section class="sub-section-six">
@@ -213,16 +272,21 @@
       </section>
 
       <section class="section-seven">
-        <p>TAKE A TOUR</p>
-        <h1>DISCOVER OUR UNDERGROUND.</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus,
-          fugiat. Aliquam voluptates nemo, sit tenetur unde illo! Ex quibusdam
-          modi nemo expedita repellat tempore, voluptatum eum facilis vero autem
-          consequatur?
-        </p>
-        <button>BOOK NOW</button>
+        <div>
+          <p>TAKE A TOUR</p>
+          <h1>DISCOVER OUR UNDERGROUND.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus,
+            fugiat. Aliquam voluptates nemo, sit tenetur unde illo! Ex quibusdam
+            modi nemo expedita repellat tempore, voluptatum eum facilis vero
+            autem consequatur?
+          </p>
+          <button>BOOK NOW</button>
+        </div>
         <!-- <video src=""></video> -->
+        <div class="section-seven-image">
+          <img src="images/alevision-co-lw3Lqe2K7xc-unsplash (1).jpg" alt="" />
+        </div>
       </section>
 
       <section class="section-eight">
@@ -311,55 +375,6 @@
       <section class="section-u10">
         <p>BLOG</p>
         <h1>News Feeds</h1>
-        <!-- <div>
-                <div>
-                    <img src="" alt="">
-
-                    <div>
-                    <p>23rd March 2022</p>
-                    <p>By Admin</p>
-                </div>
-                <h4>Each of our 8 double rooms has its own distinct</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero harum laudantium qui. Labore </p>
-                
-                </div>
-
-                <div>
-                    <img src="" alt="">
-
-                    <div>
-                    <p>23rd March 2022</p>
-                    <p>By Admin</p>
-                </div>
-                <h4>Each of our 8 double rooms has its own distinct</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero harum laudantium qui. Labore </p>
-                
-                </div>
-
-                <div>
-                    <img src="" alt="">
-
-                    <div>
-                    <p>23rd March 2022</p>
-                    <p>By Admin</p>
-                </div>
-                <h4>Each of our 8 double rooms has its own distinct</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero harum laudantium qui. Labore </p>
-                
-                </div>
-
-                <div>
-                    <img src="" alt="">
-
-                    <div>
-                    <p>23rd March 2022</p>
-                    <p>By Admin</p>
-                </div>
-                <h4>Each of our 8 double rooms has its own distinct</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero harum laudantium qui. Labore </p>
-                
-                </div>
-            </div> -->
       </section>
 
       <section class="section-ten">
@@ -378,10 +393,12 @@
               <div>
                 <p>23rd March 2022</p>
                 <p>By Admin</p>
-            </div>
-            <h4>Each of our 8 double rooms has its own distinct</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero harum laudantium qui. Labore </p>
-            
+              </div>
+              <h4>Each of our 8 double rooms has its own distinct</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                vero harum laudantium qui. Labore
+              </p>
             </div>
             <div class="slide2">
               <img
@@ -391,10 +408,12 @@
               <div>
                 <p>23rd March 2022</p>
                 <p>By Admin</p>
-            </div>
-            <h4>Each of our 8 double rooms has its own distinct</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero harum laudantium qui. Labore </p>
-            
+              </div>
+              <h4>Each of our 8 double rooms has its own distinct</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                vero harum laudantium qui. Labore
+              </p>
             </div>
             <div class="slide2">
               <img
@@ -404,10 +423,12 @@
               <div>
                 <p>23rd March 2022</p>
                 <p>By Admin</p>
-            </div>
-            <h4>Each of our 8 double rooms has its own distinct</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero harum laudantium qui. Labore </p>
-            
+              </div>
+              <h4>Each of our 8 double rooms has its own distinct</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                vero harum laudantium qui. Labore
+              </p>
             </div>
             <div class="slide2">
               <img
@@ -417,10 +438,12 @@
               <div>
                 <p>23rd March 2022</p>
                 <p>By Admin</p>
-            </div>
-            <h4>Each of our 8 double rooms has its own distinct</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum vero harum laudantium qui. Labore </p>
-            
+              </div>
+              <h4>Each of our 8 double rooms has its own distinct</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                vero harum laudantium qui. Labore
+              </p>
             </div>
 
             <div class="navigation-auto-two">
@@ -442,13 +465,13 @@
 
       <footer>
         <div>
-        <h4>VILLAMAR</h4>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque libero
-          dolores eum itaque ipsam, mollitia eveniet dignissimos ullam
-          voluptatibus obcaecati quisqu
-        </p>
-      </div>
+          <img src="images/logo.png" alt="">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+            libero dolores eum itaque ipsam, mollitia eveniet dignissimos ullam
+            voluptatibus obcaecati quisqu
+          </p>
+        </div>
         <form action="">
           <input
             type="email"
@@ -456,27 +479,30 @@
             id=""
             placeholder="Enter your email address"
           />
-          <br>  
-          <input type="submit" value="SUSCRIBE">
+          <br />
+          <input type="submit" value="SUSCRIBE" />
         </form>
       </footer>
 
+      <!-- SOCIAL ICONS -->
 
-        <!-- SOCIAL ICONS -->
-
-        <section class="footer-section">
-          <div>
-
-            <i class="fa-brands fa-facebook-f"></i>
-            <i class="fa-brands fa-twitter"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-youtube"></i>
-          </div>
-          <!-- <div class="move-top">
+      <section class="footer-section">
+        <div>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+        <!-- <div class="move-top">
             <i class="fa-solid fa-angles-up"></i>
           </div> -->
-          <p>COPYRIGHT BY <a target="_blank" href="https://okoli-emmanuel.netlify.app">EstablishedTheTechGuy</a> </p>
-        </section>
+        <p>
+          COPYRIGHT BY
+          <a target="_blank" href="https://okoli-emmanuel.netlify.app"
+            >EstablishedTheTechGuy</a
+          >
+        </p>
+      </section>
     </main>
   </body>
   <script src="script.js"></script>
