@@ -17,7 +17,7 @@ select {
 hr {
     margin: 5% 10%;
     height: 3vh;
-    background-color: rgb(23, 90, 52);
+    background-color: rgb(0, 93, 105);
 }
 header .nav-bars, .quick-info {
     display: none;
@@ -48,7 +48,7 @@ header .logo {
     background-color: rgb(0, 93, 105);
     border: 2px solid rgb(0, 93, 105);
     color: rgb(255, 255, 255);
-    box-shadow: 0 0 30px 2px rgba(247, 127, 14, 0.61);
+    box-shadow: 0 0 30px 2px rgba(0, 93, 105, 0.438);
 
 }
 .btn-one:hover {
@@ -62,7 +62,7 @@ header .logo {
     transition-property: background-color;
     transition: 1s;
     color: rgb(255, 255, 255);
-    box-shadow: 0 0 30px 2px rgba(247, 127, 14, 0.61);
+    box-shadow: 0 0 30px 2px rgba(0, 93, 105, 0.438);
 }
 .btn-two {
     background-color: transparent;
@@ -179,7 +179,7 @@ justify-content: center;
     padding: 10% 8%;
 }
 .section-two [type = datetime-local] {
-    border: 2px solid rgb(23, 90, 52);
+    border: 2px solid rgb(0, 93, 105);
     width: 100%;
     border-radius: 8px;
     border-top: none;
@@ -198,10 +198,11 @@ justify-content: center;
     width: 100%;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 0 30px 2px rgba(247, 127, 14, 0.61);
+    box-shadow: 0 0 30px 2px rgba(0, 93, 105, 0.438);
 }
 .section-two [type = submit]:hover {
     background-color: rgb(247, 126, 14);
+    box-shadow: 0 0 30px 2px rgba(247, 127, 14, 0.61);
     border: 2px solid rgb(247, 126, 14);
     transition-property: background-color;
     transition: 1s;
@@ -427,8 +428,8 @@ margin: 10% 0;
     font-weight: bold;
     transition: 2s;
     cursor: pointer;
-    background-color: rgb(23, 90, 52);
-    border: 2px solid rgb(23, 90, 52);
+    background-color: rgb(0, 93, 105);
+    border: 2px solid rgb(0, 93, 105);
     color: rgb(255, 255, 255);
     box-shadow: 0 0 30px 2px rgba(0, 93, 105, 0.438);
 }
@@ -437,7 +438,6 @@ margin: 10% 0;
     transition-property: background-color;
     transition: 1s;
     color: rgb(255, 255, 255);
-    box-shadow: 0 0 30px 2px rgba(0, 93, 105, 0.438);
     border: none;
     box-shadow: 0 0 30px 2px rgba(247, 127, 14, 0.61);
 }
@@ -460,7 +460,7 @@ margin: 10% 0;
 }
 article {
     font-size: 0.8rem;
-    color: rgb(23, 90, 52);
+    color: rgb(0, 93, 105);
     font-weight: bold;
     padding: 3% 0;
 }
@@ -472,12 +472,14 @@ article {
     clip-path: circle();
 }
 .client-feedbacks {
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0 0 0 / 30%);
-    padding: 5% 10%;
+    padding: 5% 3%;
 
 }
 .client-feedbacks-child {
+    padding: 10% 3%;
+    margin: 5% 0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 7px rgba(0 0 0 / 10%);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -501,13 +503,13 @@ article {
 
 }
 .face:focus, .face:focus-within, .client-feedbacks-child:hover {
-    transform: rotateY(180deg);
+    transform: rotateY(360deg);
 }
 .reduce-motion .back {
     z-index: 2;
     opacity: 0;
     pointer-events: none;
-    transition-duration: 0.6s;
+    transition-duration: 0.2s;
     transform: none;
 }
 .reduce-motion .client-feedbacks-child:focus .back, .reduce-motion .client-feedbacks-child:focus-within .back, .reduce-motion .client-feedbacks-child:hover .back {
@@ -519,27 +521,21 @@ article {
 /* SECTION 9 */
 .section-nine {
     text-align: center;
-    background-image: linear-gradient(gray, black);
+    background:rgba(0, 0, 0, 0.438) url(images/christian-lambert-ycyXpdhCnp8-unsplash\ \(1\).jpg)
+    repeat fixed 100%;
     padding: 30% 3%;
+    background-size: cover;
+    background-blend-mode: darken;
 }
 .section-nine h1 {
     color: white;
 }
 .section-nine p {
-    color: rgb(23, 90, 52);
+    color: rgb(0, 93, 105);
     font-weight: bold;
     padding-bottom: 5%;
 }
-.section-9-btn-one {
-    background-color: rgb(23, 90, 52);
-    border: 2px solid rgb(23, 90, 52);
-    color: rgb(255, 255, 255);
-}
-.section-9-btn-two {
-    background-color: transparent;
-    border: 2px solid rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
-}
+
 .section-nine button {
     margin: 10% 0 0 0;
     padding: 5% 8%;
@@ -547,6 +543,35 @@ article {
     transition: 0.3s;
     cursor: pointer;
     margin: 10% 2%;
+}
+
+.section-9-btn-one {
+    background-color: rgb(0, 93, 105);
+    border: 2px solid rgb(0, 93, 105);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 30px 2px rgba(0, 93, 105, 0.438);
+
+}
+.section-9-btn-one:hover {
+    background-color: transparent;
+    transition-property: background-color;
+    border: 2px solid rgba(255, 255, 255, 0.267);
+    transition: 1s;
+    color: white;
+}
+.section-9-btn-two:hover {
+    background-color: rgb(0, 93, 105);
+    transition-property: background-color;
+    transition: 1s;
+    border: 2px solid rgb(0, 93, 105);
+    color: white;
+    box-shadow: 0 0 30px 2px rgba(0, 93, 105, 0.438);
+}
+.section-9-btn-two {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.267);
+    color: white;
+
 }
 
 /* SECTION 10 */
@@ -695,14 +720,19 @@ footer input[type = email] {
 footer input[type = submit] {
     text-align: center;
     width: 100%;
-    background-color: rgb(23, 90, 52);
-    border: 2px solid rgb(23, 90, 52);
+    background-color: rgb(0, 93, 105);
+    border: 2px solid rgb(0, 93, 105);
+    box-shadow: 0 0 30px 2px rgba(0, 93, 105, 0.438);
     color: rgb(255, 255, 255);
     padding: 5% 10%;
     letter-spacing: 2px;
     cursor: pointer;
-
-
+}
+footer input[type = submit]:hover {
+    box-shadow: 0 0 30px 2px rgba(247, 127, 14, 0.61);
+    background-color: rgb(247, 126, 14);
+    border: 2px solid  rgb(247, 126, 14);
+    transition: 1s;
 }
 .footer-section {
     background-color: rgb(247, 126, 14);
@@ -718,6 +748,7 @@ footer input[type = submit] {
     background-color: black;
     padding: 3% 4%;
     margin: 0 1%;
+    cursor: pointer;
 }
 .footer-section p {
     text-align: center;
@@ -1010,9 +1041,65 @@ footer input[type = submit] {
     .section-seven p {
         font-size: 1.2rem;
     }
+    .section-eight {
+        padding: 10% 0;
+    }
+    .section-eight p {
+        font-size: 1rem;
+        font-weight: bold;
+        color: gray;
+    }
+    .section-eight h1 {
+        font-size: 5rem;
+        font-weight: 500;
+        padding: 2% 0;
+    }
     .client-feedbacks{
         display: grid;
         grid-template-columns: auto auto auto;
+        gap: 2%;
+        margin: 0 5%;
+        padding: 5% 5%;
+    }
+    .client-feedbacks-child {
+        cursor: pointer;
+    box-shadow: 0 3px 7px rgba(0 0 0 / 10%);
+    }
+    .client-feedbacks-child:hover {
+    box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.295);
+    transition: 1s;
+    }
+    .client-feedbacks-child h3 {
+        font-size: 1.5rem;
+    }
+    .client-feedbacks-child article{
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 5% 0;
+    }
+    .client-feedbacks-child p {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .section-nine {
+        padding: 0 10%;
+    }
+    .section-nine div {
+        padding: 10% 0;
+    }
+    .section-nine p {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    .section-nine h1 {
+        font-size: 5rem;
+        font-weight: 500;
+        line-height: 70px;
+    }
+    .section-nine button {
+        font-size: 1rem;
+        margin: 5% 1% 0 1%;
+        padding: 2% 5%;
     }
 
     
