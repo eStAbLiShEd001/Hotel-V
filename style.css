@@ -663,7 +663,7 @@ article {
 footer {
     padding-bottom: 20%;
 }
-footer div {
+footer .footer-logo {
     background-color: white;
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.055);
     text-align: center;
@@ -678,6 +678,9 @@ footer p {
 }
 footer form {
     margin: 0 3%;
+}
+.email-suscribe {
+    display: grid;
 }
 footer input[type = email] {
     border: none;
@@ -826,6 +829,28 @@ footer input[type = submit]:hover {
         grid-template-columns: auto auto;
         gap: 5%;
     }
+    footer .footer-logo {
+        padding: 10% 3%;
+    }
+    .email-suscribe {
+        grid-template-columns: auto auto;
+        position: relative;
+    }
+    footer input[type = email] {
+        width: 92vw;
+        padding: 5% 5%;
+    }
+    footer input[type = submit] {
+        top: 16%;
+        left: 70%;
+        padding: 3% 5%;
+        width: 25%;
+        position: absolute;
+    }
+    .footer-section {
+        display: flex;
+        /* grid-template-columns: auto auto; */
+    }
 
 
 
@@ -971,7 +996,7 @@ footer input[type = submit]:hover {
         padding: 5% 0 0 1% 0;
     }
     .sub-section-four div p {
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
     }
     .slider-effect {
         display: flex;
@@ -1124,6 +1149,9 @@ footer input[type = submit]:hover {
         grid-template-columns: auto auto auto;
         gap: 2%;
     }
+    .section-u10 h1 {
+        font-size: 5rem;
+    }
     .slide2 img {
         width: 100%;
         height: 300px;
@@ -1135,12 +1163,13 @@ footer input[type = submit]:hover {
         font-size: 1.8rem;
         padding: 5% 20% 5% 20%;
     }
-    /* footer input[type = email] {
-        position: relative;
+    footer input[type = email] {
+        width: 93vw;
+        font-size: 1.2rem;
     }
-    footer input[type = submit] {
-        position: absolute;
-    } */
+    footer input[type = email]::placeholder {
+        color: rgb(23, 90, 52);
+    }
 
     
 

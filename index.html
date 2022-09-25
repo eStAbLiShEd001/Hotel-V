@@ -450,7 +450,7 @@
       </section>
 
       <footer>
-        <div  data-aos="slide-up">
+        <div  data-aos="slide-up" class="footer-logo">
           <img src="images/logo.png" alt="" />
           <p data-aos="slide-up" data-aos-duration="1000">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
@@ -458,22 +458,27 @@
             voluptatibus obcaecati quisqu
           </p>
         </div>
-
-        <form action=""  data-aos="slide-up" data-aos-duration="1000">
+        <!-- <section class="email-suscribe"> -->
+        <form class="email-suscribe" data-aos="slide-up" data-aos-duration="1000">
+          <div>
           <input
             type="email"
             name="email"
             id=""
-            placeholder="Enter your email address"
-          />
-          <br />
+            placeholder="Enter your email address..."
+          required/>
+        </div>
+          <!-- <br /> -->
+          <div>
           <input type="submit" value="SUSCRIBE" />
+        </div>
         </form>
+      <!-- </section> -->
       </footer>
 
       <!-- SOCIAL ICONS -->
 
-      <section class="footer-section"  data-aos="slide-up" data-aos-duration="1000">
+      <section class="footer-section">
         <div>
           <i class="fa-brands fa-facebook-f"></i>
           <i class="fa-brands fa-twitter"></i>
@@ -483,12 +488,14 @@
         <!-- <div class="move-top">
             <i class="fa-solid fa-angles-up"></i>
           </div> -->
+          <div>
         <p>
           COPYRIGHT BY
           <a target="_blank" href="https://okoli-emmanuel.netlify.app"
             >EstablishedTheTechGuy</a
           >
         </p>
+      </div>
       </section>
     </main>
   </body>
