@@ -16,6 +16,7 @@
 body {
     /* padding: 0 3%; */
     background-color: rgba(85, 20, 20, 0.034);
+    font-family: 'Montserrat', sans-serif
 }
 label {
     display: block;
@@ -852,11 +853,12 @@ footer input[type = submit]:hover {
     .footer-section {
         display: flex;
         justify-content: space-around;
+        align-items: center;
     }
     .media i {
         background-color: black;
-        padding: 8% 10%;
-        margin: 0 5%;
+        padding: 8% 15%;
+        margin: 0 10%;
         font-size: 1.2rem;
     }
     .copyright {
@@ -931,7 +933,7 @@ footer input[type = submit]:hover {
     }
     .quick-info p {
         padding: 0 5%;
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
     .section-one p {
         font-size: 0.8rem;

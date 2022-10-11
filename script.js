@@ -7,10 +7,10 @@ setInterval(function(){
     }
 }, 2000);
 
-// const writeMessage = function message() {
-//     const say = alert('WELCOME TO VILLAMAR😊, PLEASE DO WELL TO ENJOY YOUR STAY');
-//     return say;
-// }
+const writeMessage = function message() {
+    const say = alert('WELCOME TO VILLAMAR😊, PLEASE DO WELL TO ENJOY YOUR STAY');
+    return say;
+}
 // const total = writeMessage()
 // let slider = 0;
 // showSlide();
